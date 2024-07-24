@@ -1,0 +1,41 @@
+{
+  "name": "textview",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@tanstack/vue-query": "^5.37.1",
+    "@vueblocks/vue-use-core": "^0.2.11",
+    "@vueblocks/vue-use-vuex": "^0.2.11",
+    "ant-design-vue": "^4.2.3",
+    "axios": "^1.7.2",
+    "tw-elements": "^2.0.0",
+    "vant": "^4.9.1",
+    "vue": "^3.4.21",
+    "vue-composable-utils": "^0.1.2",
+    "vue-hooks-api": "^0.0.0-beta.4",
+    "vue-router": "^4.3.0",
+    "vue-use-reducer": "^2.0.1-0",
+    "vue3-carousel": "^0.3.3",
+    "vue3-otp-input": "^0.4.4",
+    "vuex": "^4.1.0",
+    "vuex-persistedstate": "^4.1.0",
+    "zustand": "^4.5.2"
+  },
+  "devDependencies": {
+    "@vant/auto-import-resolver": "^1.2.1",
+    "@vitejs/plugin-vue": "^5.0.4",
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.38",
+    "tailwindcss": "^3.4.3",
+    "unplugin-auto-import": "^0.17.6",
+    "unplugin-vue-components": "^0.27.0",
+    "vite": "^5.2.8",
+    "vite-plugin-vue-devtools": "^7.0.25"
+  }
+}
