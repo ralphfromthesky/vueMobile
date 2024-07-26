@@ -7,8 +7,8 @@
     </div>
 
     <transition name="fade">
-      <!-- v-if="turnTableMessage -->
-      <div v-if="store.state.userConfigValues">
+    
+      <div v-if="store.state.userPlayTurn.success">
         <div class="flex items-center justify-center gap-[.1rem] my-[.2rem]">
           <span><img src="/money.png" class="h-[.4rem]" /></span>
           <span class="text-txt text-[.4rem] font-bold">{{
@@ -41,7 +41,7 @@
     </transition>
     <!-- {{ eventData.data.content.awards }} -->
     <div class="relative">
-      <!-- <div class="relative">
+       <div class="relative" v-if="store.state.userTurnLateActivity.awards?.length === 8">
         <div
           class="relative"
           :class="rotate ? 'img-rotate' : ''"
@@ -68,9 +68,12 @@
             </div>
           </div>
         </div>
-      </div> -->
+      </div> 
       <div
         class="relative overflow-hidden rounded-[5rem] border-2 border-[white]"
+        v-if="store.state.userTurnLateActivity.awards?.length === 5"
+        :class="rotate ? 'img-rotate' : ''"
+        ref="turnTable"
       >
       <div
           v-for="(data, index) in store.state.userTurnLateActivity.awards"
@@ -226,13 +229,7 @@ const showReward = computed(() => {
   return playTurn.value.data?.content?.awardName;
 });
 
-const randomAward = () => {
-  const selectedAward = eventData.value.data?.content?.awards;
-  console.log(selectedAward);
-  // console.log(selectedAward.find((a) => a.awardName === showReward.value));
-  console.log(newReward.value);
-};
-const newReward = ref(playTurn.value.data?.content?.awardName);
+
 
 const socialImage = ref([
   {
@@ -289,7 +286,6 @@ const rotateThisShit = () => {
   if (!store.state.userPlayTurn.success) {
     rotate.value = true;
     play.refetch();
-    randomAward();
   } else {
     messageApi.info("Better luck next time!");
   }

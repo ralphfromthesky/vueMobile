@@ -14,7 +14,6 @@ import { DatePicker } from 'vant';
 import { RollingText } from 'vant';
 import { CountDown } from 'vant';
 
-
 const app = createApp(App)
 app.use(DatePicker)
 app.use(CountDown)

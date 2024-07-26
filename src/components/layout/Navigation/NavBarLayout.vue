@@ -9,7 +9,7 @@
         <img src="/images/logo.png" class="w-full h-[.7rem]" />
       </div>
       <div class="flex gap-[.2rem] items-center" v-if="!newStore.state.userInfo.isLogin">
-        <button class="w-[1.1rem] h-[.5rem] rounded-[.15rem] text-[.2rem] bg-[#FFF0BB] text-[#1A45B1]" @click="loginModal = !loginModal">
+        <button class="w-[1.1rem] h-[.5rem] rounded-[.15rem] text-[.2rem] bg-[#FFF0BB] text-[#1A45B1]" @click="showLoginModal()">
           Login
         </button>
         <button
@@ -70,15 +70,7 @@
       <Deposit @close="closeDeposit" />
     </div>
   </div>
-
-  <!-- <Modal>
-    <Login />
-  </Modal>
-  <ModalRegister>
-    <Register />
-  </ModalRegister> -->
-    <AntModal :isOpen="loginModal" :componentPass=Login :backGrounds=true @closed="closedLogin"/>
-
+  <AntModal :isOpen="loginModal" :componentPass=Login :backGrounds=true v-if="!newStore.state.userInfo.isLogin"/>
   <AntModal :isOpen="regModal" :componentPass=Register :backGrounds=true />
 </template>
 <script setup>
@@ -92,6 +84,7 @@ import Modal from "../../../components/ModalComponent/Modal.vue";
 import ModalRegister from "@/components/ModalComponent/ModalRegister.vue";
 import {useLogin} from '@/global/loginQuery.js'
 const {mutation} = useLogin()
+const closedModal = ref(null)
 
 import { ref, computed, watch,onMounted } from "vue";
 import { Dropdown, Ripple, initTWE } from "tw-elements";
@@ -101,7 +94,7 @@ const isLogin = ref(false);
 const { query } = useGetUserInfo();
 const newStore = useStore();
 import { useGetGlobalConfigInfo } from "@/global/globalConfigInformation";
-const { registerConfig } = useGetGlobalConfigInfo();
+const { registerConfig} = useGetGlobalConfigInfo();
 const stores = useStore();
 const loginModal = ref(false)
 const regModal = ref(false)
@@ -121,6 +114,10 @@ const toggleArrow = () => {
   isUp.value = !isUp.value;
 };
 
+const showLoginModal = () => {
+  loginModal.value = !loginModal.value
+}
+
 const showDeposit = () => {
   isLogin.value = !isLogin.value;
 };
@@ -130,10 +127,10 @@ const closeDeposit = () => {
   hideThis();
 };
 
-onMounted(() => {
 
-  initTWE({ Dropdown, Ripple });
-});
+watch(newStore.state.userInfo.isLogin, (newval) => {loginModal.value = false;
+alert(`${loginModal.value} - ${newStore.state.userInfo.isLogin}`)
+})
 </script>
 
 <style scoped>

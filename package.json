@@ -14,6 +14,7 @@
     "@vueblocks/vue-use-vuex": "^0.2.11",
     "ant-design-vue": "^4.2.3",
     "axios": "^1.7.2",
+    "dayjs": "^1.11.12",
     "tw-elements": "^2.0.0",
     "vant": "^4.9.1",
     "vue": "^3.4.21",

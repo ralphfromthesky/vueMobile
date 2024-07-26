@@ -2,7 +2,7 @@
   <div>
     <div class="relative">
       <div class="relative flex justify-center heartbeat">
-        <img src="/public/redfolderImages/pinkEnvelope.png" alt="" />
+        <img src="/redfolderImages/pinkEnvelope.png" alt="" />
         <div
           class="absolute top-[50%] left-[.3rem] text-[.45rem] font-bold text-[white] text-center"
         >

@@ -26,6 +26,7 @@ const store = createStore({
     userGetAppLogin: [],
     userFakeData: [],
     
+    
   },
   mutations: {
     setLogin(state, user) {
