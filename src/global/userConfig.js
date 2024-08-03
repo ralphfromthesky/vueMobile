@@ -27,3 +27,20 @@ export const useGetUserConfig = () => {
         configData
     };
 };
+
+export const getOnlineStatus = () => {
+    const onlineData = ref([])
+    const getOnline = useQuery({
+        queryKey: async () => await axiosGet2('/api/native/v2/getOnlineStatus.do'),
+        queryKey: ['onlineStatus'],
+        refetchInterval: 180000,
+        enabled: true,
+        onSuccess: (data) => { onlineData.value = data},
+        onError: (err) => console.log(err)
+    })
+
+    return {
+        onlineData,
+        getOnline
+    }
+}

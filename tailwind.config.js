@@ -23,6 +23,8 @@ export default {
       colors: {
         bg: '#FFF0BB',
         txt: '#1A45B1',
+        bord: '#3a61c2]',
+        txt2: '#A0C5FB'
       },
     },
   },

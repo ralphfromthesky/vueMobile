@@ -8,15 +8,13 @@
                         type="text" placeholder="22/05/2024 - 22/05/2024" />
                 </div> -->
         <div>
-          <AntCalendar
-            @startDate="handleStartDate"
-            @endDate="handleEndDate"
-          />
+          <AntCalendar @startDate="handleStartDate" @endDate="handleEndDate"/>
         </div>
       </div>
       <div class="flex flex-col h-[calc(100vh-4.3rem)] overflow-auto">
         <div
-          v-for="(commissionValue, indexes) in commissionData?.data?.content?.rows"
+          v-for="(commissionValue, indexes) in commissionData?.data?.content
+            ?.rows"
           :key="indexes"
           class="flex flex-col gap-[.1rem] leading-none p-[.25rem] rounded-[.1rem] odd:bg-[#3a61c2]"
         >
@@ -129,17 +127,14 @@ import dayjs from "dayjs";
 // const acct = [{ account: "neil", DateStart: "2024/05/24", income: "1000" }, { account: "mark", DateStart: "2024/05/24", income: "1000" }, { account: "atong", DateStart: "2024/05/24", income: "1000" }]
 const handleEndDate = (end) => {
   endDates.value = dayjs(end).format("YYYY-MM-DD");
-  console.log(`${startdates.value} 00.00.0`);
-  console.log(endDates.value);
 
   commy.mutate({
-    startDate: startdates.value +' '+ "00:00:00",
-    endDate: endDates.value + ' ' + "23:59:59",
+    startDate: startdates.value + " " + "00:00:00",
+    endDate: endDates.value + " " + "23:59:59",
     pageSize: 20,
     pageNumber: 1,
     lan: "en",
   });
-  console.log(commissionData.value)
 };
 const handleStartDate = (start) => {
   startdates.value = dayjs(start).format("YYYY-MM-DD");

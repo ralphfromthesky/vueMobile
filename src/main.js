@@ -5,6 +5,9 @@ import App from './App.vue'
 import router from './router'
 import store from './store/store'
 import AntModal from "@/components/antUi/antModal.vue";
+import Register from "@/components/layout/RegisterComponent/RegisterForm.vue";
+import Login from "@/components/layout/LoginComponent/LoginForm.vue";
+
 
 
  import 'ant-design-vue/dist/reset.css';
@@ -13,6 +16,7 @@ import { Dialog } from 'vant';
 import { DatePicker } from 'vant';
 import { RollingText } from 'vant';
 import { CountDown } from 'vant';
+
 
 const app = createApp(App)
 app.use(DatePicker)
@@ -25,6 +29,7 @@ app.use(AntModal)
 app.use(router)
 app.use(VueQueryPlugin)
 app.use(store)
+
 
 
 app.mount('#app')

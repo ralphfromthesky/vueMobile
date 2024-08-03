@@ -45,8 +45,17 @@ import DirectFinancing from "@/views/Invite/DirectFinancing.vue";
 import PromoTutorial from "@/views/Invite/PromoTutorial.vue";
 import Performance from "@/views/Invite/Performance.vue";
 import Commission from "@/views/Invite/Commission.vue";
-import DirectReporting from '@/views/Invite/DirectReporting.vue'
-import LoginDevice from '@/views/LoginDevice/LoginDevice.vue'
+import DirectReporting from '@/views/Invite/DirectReporting.vue';
+import LoginDevice from '@/views/LoginDevice/LoginDevice.vue';
+import Slots from '@/views/Slots/Slots.vue'
+import Fishing from '@/views/Fishing/Fishing.vue'
+import LiveCasino from '@/views/LiveCasino/LiveCasino.vue'
+import Sports from '@/views/Sports/Sports.vue'
+import VipLoginBonus from "@/components/VipLoginBonus/VipLoginBonus.vue";
+
+
+
+
 
 // const VipPage = () => import(/* webpackChunkName: "vip" */ "@/views/Vip/VipPage.vue");
 // const JurosPage = () => import(/* webpackChunkName: "juros" */ "@/views/Juros/JurosMainPage.vue");
@@ -326,13 +335,40 @@ const router = createRouter({
     {
       path: '/directReport',
       name: 'directReport',
-      component: DirectReporting 
+      component: DirectReporting
     },
     {
       path: '/deviceinfo',
       name: 'deviceinfo',
-      component: LoginDevice 
+      component: LoginDevice  
     },
+    {
+      path: '/Slots',
+      name: 'Slots',
+      component: Slots 
+    },
+    {
+      path: '/fishing',
+      name: 'fishing',
+      component: Fishing 
+    },
+    {
+      path: '/livecasino',
+      name: 'livecasino',
+      component: LiveCasino  
+    },
+    {
+      path: '/sports',
+      name: 'sports',
+      component: Sports  
+    },
+    {
+      path: '/viplogin',
+      name: 'viplogin',
+      component: VipLoginBonus
+  
+    },
+
   ]
 })
 

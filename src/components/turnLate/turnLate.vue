@@ -41,7 +41,7 @@
     </transition>
     <!-- {{ eventData.data.content.awards }} -->
     <div class="relative">
-       <div class="relative" v-if="store.state.userTurnLateActivity.awards?.length === 8">
+       <div class="relative" v-if="store?.state?.userTurnLateActivity?.awards?.length === 8">
         <div
           class="relative"
           :class="rotate ? 'img-rotate' : ''"
@@ -71,7 +71,7 @@
       </div> 
       <div
         class="relative overflow-hidden rounded-[5rem] border-2 border-[white]"
-        v-if="store.state.userTurnLateActivity.awards?.length === 5"
+        v-if="store?.state?.userTurnLateActivity?.awards?.length === 5"
         :class="rotate ? 'img-rotate' : ''"
         ref="turnTable"
       >
@@ -191,7 +191,6 @@
         </a-tab-pane>
       </a-tabs>
     </div>
-    <AntDrawer
       :isOpen="showDrawer"
       :imageData="socialImage"
       :headerTitle="title"

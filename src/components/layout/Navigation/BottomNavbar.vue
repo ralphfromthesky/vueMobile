@@ -79,7 +79,7 @@ const showDeposit = () => {
 }
 const closeDeposit = () => {
     isLogin.value = false;
-    hideThis()
+    // hideThis()
 }
 
 </script>

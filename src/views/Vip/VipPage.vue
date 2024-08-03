@@ -68,7 +68,7 @@
           </div>
           <!-- start of table body -->
           <div v-for="(vipItems, indexes) in vipLevels.content"
-            class="grid grid-cols-3 gap-[.2rem] even:bg-[#05309F] rounded-[.1rem] p-[.15rem]" :style="vipItems.level == vipCurLevel.content.curDegreeLevel && `border: .02rem solid; border-color: #FFF0BB`">
+            class="grid grid-cols-3 gap-[.2rem] even:bg-[#05309F] rounded-[.1rem] p-[.15rem]" :style="vipItems.level == vipCurLevel?.content?.curDegreeLevel && `border: .02rem solid; border-color: #FFF0BB`">
             <!-- border border-[#FFF0BB] -->
             <div class="flex justify-center items-center">
               <div class="flex items-center justify-center relative">

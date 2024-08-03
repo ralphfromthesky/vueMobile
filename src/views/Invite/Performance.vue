@@ -10,24 +10,6 @@
         <div>
           <AntCalendar @startDate="handleStartDate" @endDate="handleEndDate" />
         </div>
-        <div class="relative">
-          <a-input
-            v-model:value="value"
-            placeholder="ID de Membro"
-          />
-          <img src="/images/search.png" alt="" class="w-[.25rem] h-[.25rem] absolute top-[.15rem] right-[.2rem]" />
-
-        </div>
-        <!-- <div
-          class="flex items-center border-[.01rem] border-[#3A61C2] rounded-full p-[.1rem] px-[.1rem] bg-[#05309F] h-[.5rem] w-[2rem]"
-        >
-          <input
-            class="h-[.3rem] w-full px-[.2rem] text-[0.2rem] bg-transparent outline-none text-white"
-            type="text"
-            placeholder="ID de Membro"
-          />
-          <img src="/images/search.png" alt="" class="w-[.25rem] h-[.25rem]" />
-        </div> -->
       </div>
       <div class="flex flex-col h-[calc(100vh-4.3rem)] overflow-auto p-[.2rem]">
         <div

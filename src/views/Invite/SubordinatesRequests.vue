@@ -15,14 +15,6 @@
         <div>
           <AntCalendar @startDate="handleStartDate" @endDate="handleEndDate" />
         </div>
-        <div class="relative">
-          <a-input v-model:value="value" placeholder="ID de Membro" />
-          <img
-            src="/images/search.png"
-            alt=""
-            class="w-[.25rem] h-[.25rem] absolute top-[.15rem] right-[.2rem]"
-          />
-        </div>
       </div>
       <div class="flex flex-col h-[calc(100vh-2.8rem)] overflow-auto">
         <div
@@ -136,7 +128,7 @@
                     </div>
                 </div> -->
   </PageLayout>
-</template>
+</template>?""
 <script setup>
 import PageLayout from "../../components/layout/PageLayoutTab.vue";
 import { onMounted, ref } from "vue";

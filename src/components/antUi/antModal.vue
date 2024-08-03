@@ -67,6 +67,10 @@ const props = defineProps({
     type: Boolean,
     default: false,
   },
+  newMessage: {
+    type: String,
+    default: ''
+  }
 });
 
 const open = ref(props.isOpen);
@@ -93,5 +97,6 @@ watch(
 
 .customColor .ant-modal-content {
   background-color: #05309f;
+
 }
 </style>

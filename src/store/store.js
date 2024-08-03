@@ -25,6 +25,8 @@ const store = createStore({
     userTurnLateActivity: [],
     userGetAppLogin: [],
     userFakeData: [],
+    useGetGames: [],
+    userSignInRule: [],
     
     
   },
@@ -91,6 +93,12 @@ const store = createStore({
     },
     setUserFakeData(state, payload) {
       state.userFakeData = payload
+    },
+    setGetGames(state, payload) {
+      state.useGetGames = payload
+    },
+    setSignInRule(state, payload) {
+      state.userSignInRule = payload
     }
     
   },
@@ -144,7 +152,10 @@ const store = createStore({
         userConfigValues: state.userConfigValues,
         userTurnLateActivity: state.userTurnLateActivity,
         userGetAppLogin: state.userGetAppLogin,
-        userFakeData: state.userFakeData
+        userFakeData: state.userFakeData,
+        useGetGames: state.useGetGames,
+        userSignInRule:state.userSignInRule
+
         
         
 

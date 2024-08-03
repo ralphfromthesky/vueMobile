@@ -9,7 +9,7 @@
   })
   const indicator = h(LoadingOutlined, {
     style: {
-      fontSize: '1rem',
+      fontSize: '1.5rem',
       color: '#FFF0BB'
     },
     spin: true,

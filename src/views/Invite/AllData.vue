@@ -16,14 +16,6 @@
         <div>
           <AntCalendar @startDate="handleStartDate" @endDate="handleEndDate" />
         </div>
-        <div class="relative">
-          <a-input v-model:value="value" placeholder="ID de Membro" />
-          <img
-            src="/images/search.png"
-            alt=""
-            class="w-[.25rem] h-[.25rem] absolute top-[.15rem] right-[.2rem]"
-          />
-        </div>
       </div>
       <div class="flex flex-col h-[calc(100vh-4.3rem)] overflow-auto p-[.2rem]">
         <div
