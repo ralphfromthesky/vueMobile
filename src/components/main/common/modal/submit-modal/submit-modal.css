@@ -1,0 +1,23 @@
+.css-1t1j96h-MuiPaper-root-MuiDialog-paper {
+  background-color: #202329;
+  color: #fff;
+}
+.css-1t1j96h-MuiPaper-root-MuiDialog-paper .subModalButton {
+  color: #f0c059;
+  border: thin solid;
+  border-color: rgba(240, 192, 89, 0.4666666667);
+  width: 7rem;
+}
+.css-1t1j96h-MuiPaper-root-MuiDialog-paper .subModalButton:hover {
+  border-color: rgba(240, 192, 89, 0.9568627451);
+}
+
+.modalTitleDiscountModal {
+  max-width: 32rem;
+  text-align: justify;
+}
+
+.goTodeposit {
+  margin-right: 10px;
+  cursor: pointer;
+}/*# sourceMappingURL=submit-modal.css.map */

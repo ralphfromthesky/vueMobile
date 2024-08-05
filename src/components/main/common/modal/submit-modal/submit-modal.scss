@@ -1,0 +1,22 @@
+.css-1t1j96h-MuiPaper-root-MuiDialog-paper{
+    background-color: #202329;
+    color: #fff;
+    .subModalButton{
+        color: #f0c059;
+        border: thin solid;
+        border-color: #f0c05977;
+        width: 7rem;
+        &:hover{
+            border-color: #f0c059f4;
+        }
+    }
+}
+
+.modalTitleDiscountModal{
+    max-width: 32rem;
+    text-align: justify;
+}
+.goTodeposit{
+    margin-right: 10px;
+    cursor: pointer;
+}

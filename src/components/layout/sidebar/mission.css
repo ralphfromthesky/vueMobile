@@ -1,0 +1,124 @@
+.missionContainer {
+  display: flex;
+  font-size: initial;
+  padding: 0.2rem;
+}
+.missionContainer .fixedLeft {
+  width: -moz-max-content;
+  width: max-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.1rem;
+  font-size: initial;
+}
+.missionContainer .fixedLeft .leftSideButton {
+  line-height: normal;
+  background-color: #F0C059;
+  color: #874404;
+  font-weight: 600;
+  width: 2rem;
+  font-size: initial;
+}
+.missionContainer .fixedLeft .leftSideButton .leftSideButtonTitle {
+  width: 2rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: initial;
+}
+.missionContainer .scrollRight {
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  margin: 0 0 0 0.2rem;
+  height: 6.26rem;
+  width: 100%;
+  font-size: initial;
+}
+.missionContainer .scrollRight .banner {
+  display: flex;
+  align-items: center;
+  background-color: #1C1E23;
+  padding: 0.2rem;
+  border-radius: 7px;
+  gap: 5px;
+}
+.missionContainer .scrollRight .banner .phoneImageBox {
+  width: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.missionContainer .scrollRight .banner .phoneImageBox .phoneImage {
+  width: 0.6rem;
+}
+.missionContainer .scrollRight .banner .labelBox {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+.missionContainer .scrollRight .banner .labelBox .boxLabel {
+  font-size: 0.15rem;
+  color: #fff;
+}
+.missionContainer .scrollRight .banner .labelBox .boxLabel .labelContent {
+  color: #FFAA09;
+}
+.missionContainer .scrollRight .banner .labelBox .bonusLabel {
+  color: #68707B;
+}
+.missionContainer .scrollRight .banner .buttonBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 18%;
+}
+.missionContainer .scrollRight .banner .buttonBox .downloadButton {
+  background-color: #F0C059;
+  color: #874404;
+  font-size: 0.18rem;
+  text-transform: capitalize;
+}
+.missionContainer .scrollRight .contextBox {
+  background-color: #1C1E23;
+  border-radius: 0.1rem;
+  color: #666;
+  font-size: 0.18rem;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.missionContainer .scrollRight .contextBox label {
+  color: white;
+  margin: auto;
+  font-size: 0.18rem;
+}
+.missionContainer .scrollRight .contextBox .imgContainer {
+  max-width: 5rem;
+  margin: auto;
+  text-align: center;
+  padding: 0.2rem 0.2rem 0 0.2rem;
+}
+.missionContainer .scrollRight .contextBox .imgContainer img {
+  width: 100%;
+  height: 100%;
+}
+.missionContainer .scrollRight .contextBox .missionLabels {
+  text-indent: 30px;
+  line-height: 30px;
+  display: flex;
+  text-align: justify;
+  flex-direction: column;
+  gap: 0.1rem;
+  padding: 0 0.2rem 0.2rem 0.2rem;
+}
+.missionContainer .scrollRight .noDataMissionImpossible {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.2rem;
+  border-radius: 0.1rem;
+}/*# sourceMappingURL=mission.css.map */

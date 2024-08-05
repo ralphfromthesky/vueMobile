@@ -1,0 +1,147 @@
+.missionContainer {
+    display: flex;
+    font-size: initial;
+    padding: .2rem;
+
+    .fixedLeft {
+        width: max-content;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: .1rem;
+        font-size: initial;
+
+        .leftSideButton {
+            line-height: normal;
+            background-color: #F0C059;
+            color: #874404;
+            font-weight: 600;
+            width: 2rem;
+            font-size: initial;
+
+            .leftSideButtonTitle {
+                width: 2rem;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                font-size: initial;
+            }
+        }
+    }
+
+    .scrollRight {
+        overflow: auto;
+        display: flex;
+        flex-direction: column;
+        gap: .15rem;
+        margin: 0 0 0 .2rem;
+        height: 6.26rem;
+        width: 100%;
+        font-size: initial;
+
+        .banner {
+            display: flex;
+            align-items: center;
+            background-color: #1C1E23;
+            padding: .2rem;
+            border-radius: 7px;
+            gap: 5px;
+
+            .phoneImageBox {
+                width: 10%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .phoneImage {
+                    width: .6rem;
+                }
+            }
+
+            .labelBox {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                width: 100%;
+
+                .boxLabel {
+                    font-size: .15rem;
+                    color: #fff;
+
+                    .labelContent {
+                        color: #FFAA09;
+                    }
+                }
+
+                .bonusLabel {
+                    color: #68707B;
+                }
+            }
+
+            .buttonBox {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 18%;
+
+                .downloadButton {
+                    background-color: #F0C059;
+                    color: #874404;
+                    font-size: .18rem;
+                    text-transform: capitalize;
+                }
+            }
+        }
+
+        .contextBox {
+            background-color: #1C1E23;
+            border-radius: .1rem;
+            color: #666;
+            font-size: .18rem;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            label {
+                color: white;
+                margin: auto;
+                font-size: .18rem;
+            }
+
+            .imgContainer {
+                max-width: 5rem;
+                margin: auto;
+                text-align: center;
+                padding: .2rem .2rem 0 .2rem;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            .missionLabels {
+                text-indent: 30px;
+                line-height: 30px;
+                display: flex;
+                text-align: justify;
+                flex-direction: column;
+                gap: .1rem;
+                padding: 0 .2rem .2rem .2rem;
+            }
+        }
+
+        .noDataMissionImpossible {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: .2rem;
+            border-radius: .1rem;
+        }
+    }
+}
+
+// .css-rnmm7m-MuiPaper-root-MuiDialog-paper {
+//     background: #202329 !important;
+//     border-radius: 7px !important;
+// }
